@@ -19,6 +19,8 @@ function gridMaker(){
 
       createColumn.addEventListener('click', function (columnSelector){
     columnSelector.target.style.backgroundColor = document.getElementById("colorPicker").value;
+    this.style.borderColor="#9ecaed";
+    this.style.boxshadow="0 0 10px #9ecaed";
   });
     }
   }
@@ -34,7 +36,3 @@ document.getElementById("submit").addEventListener("click", function(pickColors)
 
 });
 
-var click_me= document.getElementById("click_me");
-click_me.addEventListener("click", function (){
-   this.style.color = "blue";
-});
